@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.seleniumhq.selenium:selenium-java:3.141.59'
+
+    implementation 'io.cucumber:cucumber-java:7.9.0'
+    implementation 'io.cucumber:cucumber-junit:7.9.0'
+    implementation 'org.hamcrest:hamcrest:2.2'
+}
+
+test {
+    useJUnit()
+}
